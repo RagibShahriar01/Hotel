@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E7B1353-B182-4EB4-9FFE-CAD8C419C7E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel</RootNamespace>
+    <AssemblyName>Hotel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\DatabaseHelper.cs" />
+    <Compile Include="Forms\AcDouble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AcDouble.Designer.cs">
+      <DependentUpon>AcDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AcRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AcRoom.Designer.cs">
+      <DependentUpon>AcRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AcSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AcSingle.Designer.cs">
+      <DependentUpon>AcSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AcTriple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AcTriple.Designer.cs">
+      <DependentUpon>AcTriple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AcTwoDouble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AcTwoDouble.Designer.cs">
+      <DependentUpon>AcTwoDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AcTwoSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AcTwoSingle.Designer.cs">
+      <DependentUpon>AcTwoSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddToCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddToCart.Designer.cs">
+      <DependentUpon>AddToCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminRegistration.Designer.cs">
+      <DependentUpon>AdminRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MyUserProfilecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MyUserProfilecs.Designer.cs">
+      <DependentUpon>MyUserProfilecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NonAc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NonAc.Designer.cs">
+      <DependentUpon>NonAc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NonDouble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NonDouble.Designer.cs">
+      <DependentUpon>NonDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NonSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NonSingle.Designer.cs">
+      <DependentUpon>NonSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NonTriple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NonTriple.Designer.cs">
+      <DependentUpon>NonTriple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NonTwoDouble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NonTwoDouble.Designer.cs">
+      <DependentUpon>NonTwoDouble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NonTwoSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NonTwoSingle.Designer.cs">
+      <DependentUpon>NonTwoSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RoomList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RoomList.Designer.cs">
+      <DependentUpon>RoomList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\GetAdmin.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserProfile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AcDouble.resx">
+      <DependentUpon>AcDouble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AcRoom.resx">
+      <DependentUpon>AcRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AcSingle.resx">
+      <DependentUpon>AcSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AcTriple.resx">
+      <DependentUpon>AcTriple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AcTwoDouble.resx">
+      <DependentUpon>AcTwoDouble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AcTwoSingle.resx">
+      <DependentUpon>AcTwoSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddToCart.resx">
+      <DependentUpon>AddToCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminRegistration.resx">
+      <DependentUpon>AdminRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MyUserProfilecs.resx">
+      <DependentUpon>MyUserProfilecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NonAc.resx">
+      <DependentUpon>NonAc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NonDouble.resx">
+      <DependentUpon>NonDouble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NonSingle.resx">
+      <DependentUpon>NonSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NonTriple.resx">
+      <DependentUpon>NonTriple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NonTwoDouble.resx">
+      <DependentUpon>NonTwoDouble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NonTwoSingle.resx">
+      <DependentUpon>NonTwoSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RoomList.resx">
+      <DependentUpon>RoomList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nonAcDouble.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NonAcTwoSingle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nontriplebed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NonTwoDoubleBed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nonSingleBed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcSingle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcDouble.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcTwoSingleBed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcTriple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcTwoDouble.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
